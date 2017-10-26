@@ -14,7 +14,7 @@
 			<property name="locations" value="classpath:config/dbconn.properties" />	   
 	   </bean>
 	   
-	   <bean id="dataSource" class="org.apache.commonsdbcp.BasicDataSource" destroy-method="close">
+	   <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 	   		<property name="driverClassName" value="${jdbc.driver}" />
 	   		<property name="url" value="${jdbc.url}" />
 	   		<property name="username" value="${jdbc.username}" />
@@ -40,8 +40,8 @@
 	   		<property name="sqlMapClientTemplate" ref="sqlMapClientTemplate" />
 	   </bean>
 	   
-	   <bean id="boardService" class="smboard.board.service.BoardService">
+	<!--    <bean id="boardService" class="smboard.board.service.BoardService">
 	   		<property name="sqlMapClientTemplate" ref="sqlMapClientTemplate" />
-	   </bean>
+	   </bean> -->
 	    					   
 </beans>

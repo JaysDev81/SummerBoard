@@ -7,6 +7,7 @@ public class MemberModel {
 	private String userPw;
 	private String userName;
 	private String joinDate;
+	
 	public int getIdx() {
 		return idx;
 	}

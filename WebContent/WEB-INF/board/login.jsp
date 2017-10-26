@@ -25,7 +25,7 @@
 								break;
 						case 3:
 								alert("회원가입 처기 완료되었습니다! 로그인 해 주세요!");
-								location.href = "<%=request.getContextPath()%> /login.do";
+								location.href = "<%=request.getContextPath()%>/login.do";
 								break;
 						}
 				}
